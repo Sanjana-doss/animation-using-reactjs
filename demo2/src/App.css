@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.custom-container {
+  width: 95%;
+  height: 200px; 
+  max-width: 100%;
+}
+.custom-container1 {
+  width: 80%; 
+  height: 400px; 
+  display: flex;
+ 
+}
+.f {
+    font-family: Urbanist, sans-serif;
+    font-weight: bold;
+}
+
+.carousel-content {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  max-height: 400px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-container {
+  width: 100%;
+  height: 100px;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transform: rotate(-2.5deg);
+  padding: 60px 0;
+}
+
+.scroll-content {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.star {
+  color: #ff8c00;
+  margin: 0 20px;
+}
+.frame-item {
+  width: 1060.2px;
+  height: 700.2px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -20.2px;
+  left: 440px;
+  object-fit: contain;
+  z-index: 1;
+}
+.image-stack-container {
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+}
+
+.image-stack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  opacity: 1; /* Adjust opacity to make the images blend */
+}
+
+.image-stack:nth-child(2) {
+  transform: translate(10px, 10px); /* Slight offset for the second image */
+}
+
+.image-stack:nth-child(3) {
+  transform: translate(20px, 20px); /* Slight offset for the third image */
+}
+
